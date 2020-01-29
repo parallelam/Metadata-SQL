@@ -4,10 +4,10 @@ A centralized repository for hosting standardized SQL, and source CSV files, for
 
 To add:
 
-** states / cities / counties / townships (ISO 3166 subdivisions)
-** zip/postal codes
-** languages
-** dial codes
-** us tax brackets
-** units of measure and conversions (mass/weight/speed/time/length/data/temperature)
-** payment frequency
+* states / cities / counties / townships (ISO 3166 subdivisions)
+* zip/postal codes
+* languages
+* dial codes
+* us tax brackets
+* units of measure and conversions (mass/weight/speed/time/length/data/temperature)
+* payment frequency
