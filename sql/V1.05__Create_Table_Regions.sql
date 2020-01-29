@@ -1,26 +1,23 @@
 CREATE DATABASE IF NOT EXISTS metadata;
 USE metadata;
-create table regions
-(
-    region_id                smallint(3) auto_increment
-        primary key,
-    global_code              smallint(1)                        not null,
-    global_name              char(5)                            not null,
-    region_code              smallint(3)                        not null,
-    region_name              varchar(8)                         not null,
-    subregion_code           smallint(3)                        not null,
-    subregion_name           varchar(32)                        not null,
-    intermediate_region_code smallint(3)                        null,
-    intermediate_region_name varchar(30)                        null,
-    country_or_area_name     varchar(55)                        not null,
-    un_m49_code              smallint(3)                        not null,
-    iso_alpha_three_code     char(3)                            null,
-    ldc                      bit      default b'0'              null comment 'Least Developed Countries',
-    lldc                     bit      default b'0'              null comment 'Land Locked Developing Country',
-    sids                     bit      default b'0'              null comment 'Small Island Developing States',
-    dodc                     enum ('Developed', 'Developing')   null comment 'Developed or Developing Country',
-    createdAt                datetime default CURRENT_TIMESTAMP not null,
-    updatedAt                datetime                           null
+CREATE TABLE regions (
+    region_id SMALLINT(3) AUTO_INCREMENT PRIMARY KEY,
+    global_code SMALLINT(1) NOT NULL,
+    global_name CHAR(5) NOT NULL,
+    region_code SMALLINT(3) NOT NULL,
+    region_name VARCHAR(8) NOT NULL,
+    subregion_code SMALLINT(3) NOT NULL,
+    subregion_name VARCHAR(32) NOT NULL,
+    intermediate_region_code SMALLINT(3) NULL,
+    intermediate_region_name VARCHAR(30) NULL,
+    country_or_area_name VARCHAR(55) NOT NULL,
+    un_m49_code SMALLINT(3) NOT NULL,
+    iso_alpha_three_code CHAR(3) NULL,
+    ldc BIT DEFAULT 0 NULL COMMENT 'Least Developed Countries',
+    lldc BIT DEFAULT 0 NULL COMMENT 'Land Locked Developing Country',
+    sids BIT DEFAULT 0 NULL COMMENT 'Small Island Developing States',
+    dodc ENUM('Developed', 'Developing') NULL COMMENT 'Developed or Developing Country',
+    last_updated DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 create index idx_region_name

@@ -1,16 +1,13 @@
 CREATE DATABASE IF NOT EXISTS metadata;
 USE metadata;
-create table if not exists timezones
-(
-    timezone_id           MEDIUMINT(8) auto_increment
-        primary key,
-    tz_zone_id            smallint(3)                               not null,
-    timezone_abbreviation varchar(6)                            null,
-    timezone_time_start   decimal(11)                           not null,
-    timezone_gmt_offset   int(11) default 0,
-    timezone_is_dst       bit         default b'0'              null,
-    createdAt             datetime    default CURRENT_TIMESTAMP not null,
-    updatedAt             datetime                              null
+CREATE TABLE IF NOT EXISTS timezones (
+    timezone_id MEDIUMINT(8) AUTO_INCREMENT PRIMARY KEY,
+    tz_zone_id SMALLINT(3) NOT NULL,
+    timezone_abbreviation VARCHAR(6) NULL,
+    timezone_time_start DECIMAL(11) NOT NULL,
+    timezone_gmt_offset INT(11) DEFAULT 0,
+    timezone_is_dst BIT DEFAULT 0 NULL,
+    last_updated DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 create index idx_timezone_time_start

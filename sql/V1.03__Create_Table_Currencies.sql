@@ -1,16 +1,13 @@
 CREATE DATABASE IF NOT EXISTS metadata;
 USE metadata;
-create table currencies
-(
-    currency_id              smallint(3) auto_increment
-        primary key,
-    entity_name              varchar(100)                       not null,
-    currency_name            varchar(100)                       null,
-    currency_alphabetic_code char(3)                            null,
-    currency_numeric_code    smallint(3)                        null,
-    currency_minor_unit      smallint(1)                        null,
-    createdAt                datetime default CURRENT_TIMESTAMP not null,
-    updatedAt                datetime                           null
+CREATE TABLE currencies (
+    currency_id SMALLINT(3) AUTO_INCREMENT PRIMARY KEY,
+    entity_name VARCHAR(100) NOT NULL,
+    currency_name VARCHAR(100) NULL,
+    currency_alphabetic_code CHAR(3) NULL,
+    currency_numeric_code SMALLINT(3) NULL,
+    currency_minor_unit SMALLINT(1) NULL,
+    last_updated DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 create index idx_currency_alphabetic_code

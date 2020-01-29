@@ -1,21 +1,16 @@
 CREATE DATABASE IF NOT EXISTS metadata;
 USE metadata;
-create table measurement_temperature
-(
-    temperature_id                smallint(1) auto_increment
-        primary key,
-    temperature_type_name         varchar(10)                        not null,
-    temperature_type_abbreviation char                               not null,
-    convert_to_fahrenheit         varchar(50)                        not null,
-    convert_to_celsius            varchar(50)                        not null,
-    convert_to_kelvin             varchar(50)                        not null,
-    temperature_to_boil_water     varchar(7)                         not null,
-    temperature_to_freeze_water   varchar(8)                         not null,
-    temperature_for_absolute_zero varchar(9)                         not null,
-    createdAt                     datetime default CURRENT_TIMESTAMP not null,
-    updatedAt                     datetime                           null,
-    constraint measurement_temperature_temperature_type_abbreviation_uindex
-        unique (temperature_type_abbreviation),
-    constraint measurement_temperature_temperature_type_name_uindex
-        unique (temperature_type_name)
+CREATE TABLE measurement_temperature (
+    temperature_id SMALLINT(1) AUTO_INCREMENT PRIMARY KEY,
+    temperature_type_name VARCHAR(10) NOT NULL,
+    temperature_type_abbreviation CHAR NOT NULL,
+    convert_to_fahrenheit VARCHAR(50) NOT NULL,
+    convert_to_celsius VARCHAR(50) NOT NULL,
+    convert_to_kelvin VARCHAR(50) NOT NULL,
+    temperature_to_boil_water VARCHAR(7) NOT NULL,
+    temperature_to_freeze_water VARCHAR(8) NOT NULL,
+    temperature_for_absolute_zero VARCHAR(9) NOT NULL,
+    last_updated DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    CONSTRAINT measurement_temperature_temperature_type_abbreviation_uindex UNIQUE (temperature_type_abbreviation),
+    CONSTRAINT measurement_temperature_temperature_type_name_uindex UNIQUE (temperature_type_name)
 );

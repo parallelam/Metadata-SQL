@@ -1,18 +1,14 @@
 CREATE DATABASE IF NOT EXISTS metadata;
 USE metadata;
-create table countries
-(
-    country_id                    smallint(3) auto_increment
-        primary key,
-    country_english_name          varchar(45)                        not null,
-    country_alpha_two_code        char(2)                            not null,
-    country_alpha_three_code      char(3)                            not null,
-    country_unm49_code            smallint(3)                        not null comment 'AKA the United Nation''s M49 Code',
-    country_dash_alpha_two_format char(13)                           not null,
-    createdAt                     datetime default CURRENT_TIMESTAMP not null,
-    updatedAt                     datetime                           null,
-    constraint countries_country_unm49_code_uindex
-        unique (country_unm49_code)
+CREATE TABLE countries (
+    country_id SMALLINT(3) AUTO_INCREMENT PRIMARY KEY,
+    country_english_name VARCHAR(45) NOT NULL,
+    country_alpha_two_code CHAR(2) NOT NULL,
+    country_alpha_three_code CHAR(3) NOT NULL,
+    country_unm49_code SMALLINT(3) NOT NULL COMMENT 'AKA the United Nation\'s M49 Code',
+    country_dash_alpha_two_format CHAR(13) NOT NULL,
+    last_updated DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    CONSTRAINT countries_country_unm49_code_uindex UNIQUE (country_unm49_code)
 );
 
 create index idx_country_alpha_three_code
