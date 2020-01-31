@@ -1,4 +1,4 @@
-currency_id,entity_name,currency_name,currency_alphabetic_code,currency_numeric_code,currency_minor_unit
+currency_id,entity_name,currency_english_name,currency_iso_alphabetic_code,currency_iso_numeric_code,currency_minor_units
 ,AFGHANISTAN,Afghani,AFN,971,2
 ,ALAND ISLANDS,Euro,EUR,978,2
 ,ALBANIA,Lek,ALL,8,2

@@ -1,9 +1,11 @@
 # Metadata-SQL
 
-A centralized repository for hosting standardized SQL, and source CSV files, for a Metadata DB, written in a versioned manner for Flyway enablement.
+A centralized repository for hosting standardized SQL, SQL Creates, SQL Inserts, SQL Updates and source CSV files, for a Metadata DB, written in a versioned manner for Flyway support.
 
 Currently has:
-* Countries (ISO-3166)
+* Continents
+* Regions (UN-M49)
+* Countries (ISO-3166-1-Alpha-2, ISO-3166-1-Alpha-3, ISO-3166-1 Numeric Code AKA UN-M49 Code)
 * Currencies (ISO-4217)
 * Timezones with Zone ID's (IANA-2019)
 * Units of Measure and Conversions for Temperature
@@ -51,4 +53,48 @@ Output of above example:
 ````
 "local_time"
 "Tue, 28 Jan 2020, 12:34:44"
+````
+
+
+Reference Links for Data Sources:
+````
+https://www.census.gov/geographies/reference-files.2016.html
+http://www.geopostcodes.com/
+http://www.geonames.org/data-sources.html
+https://unstats.un.org/unsd/methodology/m49/overview
+https://www.iso.org/iso-4217-currency-codes.html
+https://www.iso.org/iso-3166-country-codes.html
+https://datahub.io/core/language-codes
+https://www.loc.gov/standards/iso639-2/php/code_list.php
+https://datahub.io/core/fips-10-4
+````
+
+
+Informational Reading on Standardization Organizations:
+````
+https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force
+https://en.wikipedia.org/wiki/International_Organization_for_Standardization
+https://en.wikipedia.org/wiki/Internet_Assigned_Numbers_Authority
+https://en.wikipedia.org/wiki/Federal_Information_Processing_Standards
+````
+
+
+Informational Reading on Specific Standards & Data Aggregates:
+````
+http://efele.net/maps/fips-10/data/
+https://en.wikipedia.org/wiki/ISO_3166
+https://en.wikipedia.org/wiki/ISO_3166-1
+https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3
+https://en.wikipedia.org/wiki/ISO_3166-1_numeric
+https://en.wikipedia.org/wiki/ISO_3166-2
+https://en.wikipedia.org/wiki/ISO_3166-3
+https://en.wikipedia.org/wiki/ISO_639
+https://en.wikipedia.org/wiki/ISO_639-1
+https://en.wikipedia.org/wiki/ISO_639-2
+https://en.wikipedia.org/wiki/ISO_639-3
+https://en.wikipedia.org/wiki/ISO_639-5
+https://en.wikipedia.org/wiki/ISO_639-6
+https://en.wikipedia.org/wiki/ISO_4217
+https://en.wikipedia.org/wiki/Tz_database
 ````

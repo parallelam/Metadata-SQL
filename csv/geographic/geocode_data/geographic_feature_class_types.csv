@@ -1,0 +1,10 @@
+﻿entry_id,geographic_feature_class,geographic_feature_class_description
+,A,"References things like Country, State, Region, etc."
+,H,"References things like Stream, Lake, River, etc."
+,L,"References things like Parks, Areas, etc."
+,P,"References things like City, Village, etc."
+,R,"References things like Road, Railroad, etc."
+,S,"References things like Spot, Building, Farm, etc."
+,T,"References things like Mountain, Hill, Rock, etc."
+,U,References points undersea.
+,V,"References things like Forest, Heath, etc."
