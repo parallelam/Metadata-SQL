@@ -1,5 +1,5 @@
 ﻿,,,,,,,,,,This column is AKA UN-M49 code.,,,,,
-region_id,global_code,global_name,region_code,region_name,subregion_code,subregion_name,intermediate_region_code,intermediate_region_name,country_or_area_name,iso_3166-1_numeric_code,iso_alpha_three_code,ldc,lldc,sids,dodc
+entry_id,global_code,global_name,region_code,region_name,subregion_code,subregion_name,intermediate_region_code,intermediate_region_name,country_or_area_name,iso_3166_1_numeric_code,iso_3166_1_alpha3_code,ldc,lldc,sids,dodc
 ,1,World,2,Africa,15,Northern Africa,,,Algeria,12,DZA,,,,Developing
 ,1,World,2,Africa,15,Northern Africa,,,Egypt,818,EGY,,,,Developing
 ,1,World,2,Africa,15,Northern Africa,,,Libya,434,LBY,,,,Developing

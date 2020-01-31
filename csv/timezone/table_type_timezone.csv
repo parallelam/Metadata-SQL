@@ -1,4 +1,4 @@
-tz_zone_id,country_alphatwo_code,tz_zone_name
+entry_id,iso_3166_1_alpha2_code,zone_name
 1,AD,Europe/Andorra
 2,AE,Asia/Dubai
 3,AF,Asia/Kabul
