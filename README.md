@@ -58,7 +58,6 @@ Output of above example:
 
 Reference Links for Data Sources:
 ````
-https://www.census.gov/geographies/reference-files.2016.html
 http://www.geopostcodes.com/
 http://www.geonames.org/data-sources.html
 https://unstats.un.org/unsd/methodology/m49/overview
@@ -67,6 +66,8 @@ https://www.iso.org/iso-3166-country-codes.html
 https://datahub.io/core/language-codes
 https://www.loc.gov/standards/iso639-2/php/code_list.php
 https://datahub.io/core/fips-10-4
+https://www.census.gov/geographies/reference-files/2018/demo/popest/2018-fips.html
+https://github.com/timshadel/subdivision-list
 ````
 
 
